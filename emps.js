@@ -36,7 +36,7 @@ emprouter.post("/",function(request, response)
     
     let query = `insert into emp values(${eno}, '${ename}', '${eddress}')`;
     console.log(query);
-
+    console.log(resultOfValidation);
     connection.query(query, function(err, result){
         if(err==null)
         {
